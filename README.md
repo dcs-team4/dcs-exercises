@@ -22,12 +22,18 @@ cd dcs-exercises
 python3 --version
 ```
 
-Output should be `Python 3.x.x` (ideally 3.10+). If not, get the latest version here:<br>https://www.python.org/downloads/
+Output should be `Python 3.x.x` (ideally 3.10+). If not, get the latest version here: https://www.python.org/downloads/
 
 4. Install project dependencies:
 
 ```
 pip install -r requirements.txt
+```
+
+5. Enable Jupyter widgets:
+
+```
+jupyter nbextension enable --py widgetsnbextension
 ```
 
 Open the notebooks (`.ipynb` files) in VSCode, or your favorite Jupyter notebook editor.
@@ -42,4 +48,11 @@ Open the notebooks (`.ipynb` files) in VSCode, or your favorite Jupyter notebook
 
 4. Log in to VSCode with GitHub (bottom left corner of VSCode window)
 
-Now you should be able to open Jupyter notebooks (`.ipynb` files), run code within them (assuming you have already done `pip install notebook`) and join Live Share sessions for collaborative coding.
+Now you should be able to open Jupyter notebooks and run code within them.
+
+To check that it works:
+
+1. Go to `File -> Open Folder` in VSCode
+2. Find and open the `dcs-exercises` folder from earlier (should be in `[your-username]/dcs-exercises`)
+3. Click one of the `.ipynb` files under one of the `unitX` folders now on the left in VSCode
+4. Try running one of the code blocks in the notebook
