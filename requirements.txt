@@ -1,3 +1,5 @@
 stmpy==0.7.5
 notebook==6.4.8
 ipywidgets==7.6.5
+appJar==0.94.0
+paho-mqtt==1.6.1
